@@ -2,7 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Пинк</title>
+    <title>Panteon</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="css/style.min.css" rel="stylesheet">
@@ -11,26 +11,227 @@
     <link href="/fonts/opensanslight.woff2" as="font" rel="preload">
     <script>
       // Picture element HTML5 shiv
-      document.createElement( "picture" );
+      document.createElement("picture");
     </script>
     <script src="js/picturefill.min.js" async></script>
   </head>
   <body>
-    <header>
-
-
+    <header class="main-header">
+      <div class="main-header__nav-wrapper">
+        <nav class="main-header__nav">
+          <img class="main-header__logo" src="" width="" height="" alt="Panteon project">
+          <button class="main-header__menu-button" type="button"><span class="visually-hidden">Меню сайта</span></button>
+          <div class="main-header__menu menu">
+            <ul class="menu-list">
+              <li class="menu-item">Участники экспедиции</li>
+              <li class="menu-item">Оплата</li>
+              <li class="menu-item">Риски</li>
+              <li class="menu-item">О компании</li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+      <div class="main-header__wrapper">
+        <h1 class="main-header__title">Пункт назначения: <span class="main-header__title main-header__title--panteon">Пантеон,</span> <span class="main-header__title main-header__title--mars">марс</span></h1>
+        <video class="main-header__video"></video>
+        <p class="main-header__discription">Первый город на планете Марс недалеко от горы Олимп</p>
+        <button class="main-header__button" type="button"><span class="visually-hidden">Нажмите, чтобы развернуть</span></button>
+      </div>
     </header>
-
-
+    <main class="main">
+      <section class="facts">
+        <h2 class="visually-hidden">Факты о Марсе</h2>
+        <ul class="facts__list">
+          <li class="facts__item">
+            <span class="facts__title">4</span>
+            <p class="facts__discription">четвёртая планета по удалённости от Солнца</p>
+          </li>
+          <li class="facts__item">
+            <span class="facts__title">7</span>
+            <p class="facts__discription">седьмая по размерам планета Солнечной системы</p>
+          </li>
+          <li class="facts__item">
+            <span class="facts__title">10,7%</span>
+            <p class="facts__discription">массы Земли (ваш вес будет в 3 раза меньше, чем на Земле)</p>
+          </li>
+          <li class="facts__item">
+            <span class="facts__title">2</span>
+            <p class="facts__discription">спутника вместо Луны (как картошка, только больше)</p>
+          </li>
+          <li class="facts__item">
+            <span class="facts__title">21 км</span>
+            <p class="facts__discription">высота самой высокой горы Марса.</p>
+          </li>
+          <li class="facts__item">
+            <span class="facts__title">+20</span>
+            <p class="facts__discription">максимальная температура на поверхности</p>
+          </li>
+        </ul>
+      </section>
+      <section class="about">
+        <h2 class="about-title">Марс. Вспомнить всё</h2>
+        <div class="about-wrapper">
+          <h3 class="about-subtitle">Что такое Марс?</h3>
+          <p class="about-discription">Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.</p>
+          <p class="about-discription">Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв.</p>
+        </div>
+        <div class="about-wrapper">
+          <h3 class="about-subtitle">Где это? Как туда доехать?</h3>
+          <p class="about-discription">Расстояние до Марса — почти 56 миллионов километров.</p>
+          <p class="about-discription">Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8 месяцев.</p>
+        </div>
+      </section>
+      <section class="elon-musk">
+        <h2 class="elon-musk__title">От идеи до реализации</h2>
+        <h3 class="elon-musk__subtitle">Илон Маск. Гений или безумец?</h3>
+        <p class="elon-musk__discription">Канадско-американский инженер, предприниматель, изобретатель и инвестор; миллиардер. Основатель компаний SpaceX и X.com, позже переименованной в PayPal. Планирует потратить большую часть накоплений на реализацию своей мечты, а также мечты многих тысяч романтиков, писателей, учёных: создать внеземную цивилизацию.</p>
+        <div class="elon-musk__image-wrapper">
+          <img class="elon-musk__image" src="" width="" height="" alt="Илон Маск">
+          <p class="elon-musk__discription elon-musk__discription--citation">Мы должны сделать эту мечту реальностью за наше время жизни. Любой человек, который пожелает отправиться на Марс, должен иметь такую возможность</p>
+        </div>
+        <p class="elon-musk__discription"> — заявил Маск на Международной астронавтической конференции в Гвадалахаре (Мексика). Он обосновал необходимость своего проекта вопросом выживания человечества, которое для своего сохранения должно стать «космическим видом».</p>
+        <p class="elon-musk__discription">Илон поставил перед собой цель: скоратить стоимость вывода кораблей в космос в 10 раз, что станет первым шагом для человечества в освоении Марса.</p>
+      </section>
+      <section class="cost">
+        <h2 class="cost__title">Стоимость перелёта</h2>
+        <img class="cost__image" src="" width="" height="" alt="Ракета, взмывающая ввысь!">
+        <p class="cost__discription">Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов. Маск стремится сократить эту цифру в 20 000 раз, что составит <span>500 000 долларов</span> на человека.</p>
+        <p class="cost__discription cost__discription--price"><span>$500 k</span>и ты на Марсе!</p>
+        <a class="cost__link" href="#">Я готов лететь</a>
+      </section>
+      <section class="news">
+        <h2 class="news__title">Подводные  камни  в масштабах  космоса</h2>
+        <video class="news__video"></video>
+        <ul class="news__list">
+          <li class="news__item">
+            <input type="radio" name="new" id="new-first">
+            <h3 class="news__subtitle"><label for="new-first">Жить или выживать?</label></h3>
+            <p class="news__discription">Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?</p>
+            <p class="news__discription">Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов, а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев</p>
+            <p class="news__discription">На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью создать новую цивилизацию.</p>
+          </li>
+          <li class="news__item">
+            <input type="radio" name="new" id="new-second">
+            <h3 class="news__subtitle"><label for="new-second">Готовы ли технологии?</label></h3>
+            <p class="news__discription">Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?</p>
+            <p class="news__discription">Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов, а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев</p>
+            <p class="news__discription">На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью создать новую цивилизацию.</p>
+          </li>
+          <li class="news__item">
+            <input type="radio" name="new" id="new-third">
+            <h3 class="news__subtitle"><label for="new-third">Путешествие на грани фантастики</label></h3>
+            <p class="news__discription">Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?</p>
+            <p class="news__discription">Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов, а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев</p>
+            <p class="news__discription">На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью создать новую цивилизацию.</p>
+          </li>
+          <li class="news__item">
+            <input type="radio" name="new" id="new-forth">
+            <h3 class="news__subtitle"><label for="new-forth">Жизнь на Марсе</label></h3>
+            <p class="news__discription">Чем отличаются Земля и Марс? Какие условия встретят новых поселенцев?</p>
+            <p class="news__discription">Марс холодная и засушливая планета, на которой есть своя атмосфера, на 96% состоящая из углекислых газов, а минимальная температура опускается до -140 градусов по Цельсию. Каждый год по весне на планете случаются пылевые бури, длящиеся от нескольких часов до нескольких месяцев</p>
+            <p class="news__discription">На планете отсутствует магнитное поле, поэтому радиационный фон повышен. А низкая гравитация при длитеьном пребывании на Марсе сделает возвращение на Землю невозможным. Полёт на Марс — билет в один конец с целью создать новую цивилизацию.</p>
+          </li>
+        </ul>
+      </section>
+      <section class="organization">
+        <h2 class="organization__title">Организация жизни в колонии</h2>
+        <ul class="organization__list">
+          <li class="organization__item">
+            <input type="radio" name="organization" id="organization-first">
+            <label for="organization-first">Проживание</label>
+            <img src="" width="" height="" alt="Ваша будущая комната">
+            <h3 class="organization__subtitle">Проживание</h3>
+            <p class="organization__discription">В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для выращивания зелени — 50 м2 на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.</p>
+            <a class="organization__link" href="#">Подробнее</a>
+          </li>
+          <li class="organization__item">
+            <input type="radio" name="organization" id="organization-second">
+            <label for="organization-second">Проживание</label>
+            <img src="" width="" height="" alt="Ваша будущая комната">
+            <h3 class="organization__subtitle">Проживание</h3>
+            <p class="organization__discription">В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для выращивания зелени — 50 м2 на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.</p>
+            <a class="organization__link" href="#">Подробнее</a>
+          </li>
+          <li class="organization__item">
+            <input type="radio" name="organization" id="organization-third">
+            <label for="organization-third">Проживание</label>
+            <img src="" width="" height="" alt="Ваша будущая комната">
+            <h3 class="organization__subtitle">Проживание</h3>
+            <p class="organization__discription">В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для выращивания зелени — 50 м2 на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.</p>
+            <a class="organization__link" href="#">Подробнее</a>
+          </li>
+          <li class="organization__item">
+            <input type="radio" name="organization" id="organization-forth">
+            <label for="organization-forth">Проживание</label>
+            <img src="" width="" height="" alt="Ваша будущая комната">
+            <h3 class="organization__subtitle">Проживание</h3>
+            <p class="organization__discription">В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для выращивания зелени — 50 м2 на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.</p>
+            <a class="organization__link" href="#">Подробнее</a>
+          </li>
+          <li class="organization__item">
+            <input type="radio" name="organization" id="organization-fifth">
+            <label for="organization-fifth">Проживание</label>
+            <img src="" width="" height="" alt="Ваша будущая комната">
+            <h3 class="organization__subtitle">Проживание</h3>
+            <p class="organization__discription">В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для выращивания зелени — 50 м2 на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.</p>
+            <a class="organization__link" href="#">Подробнее</a>
+          </li>
+        </ul>
+      </section>
+      <section class="plans">
+        <h2 class="plans__title">Деньги приготовил. Когда вылетаем?</h2>
+        <p class="plans__discription">Первый «частный» полёт на Марс осуществит в 2018 году в беспилотном варианте корабль Dragon V2 с помощью тяжёлой ракеты Falcon Heavy. После этого запланированы две миссии в 2020 году, как минимум одна в 2022-м и, вероятно, пилотируемая миссия через два года с достижением Марса в 2025 году.</p>
+        <p class="plans__discription">Для всех желающих открыты курсы подготовки.</p>
+        <p class="plans__discription">За 40-100 ближайших лет на Марс планируется доставить до 1 млн.</p>
+        <a class="plans__link" href="#">Критерии отбора</a>
+      </section>
+      <section class="feedback form">
+        <h2 class="visually-hidden">Форма для подписки на новости</h2>
+        <form class="form__wrapper" action="https://echo.htmlacademy.ru" method="POST" name="feedback">
+          <p class="form__discription">Будь в курсе новостей</p>
+          <label for="name" class="visually-hidden">Ваше имя</label>
+          <input type="text" name="name" id="name" placeholder="Имя">
+          <label for="email" class="visually-hidden">Ваше имя</label>
+          <input type="email" name="email" id="email" placeholder="E-mail">
+          <button class="form__button" type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+    <footer class="main-footer">
+      <div>
+        <ul class="main-footer__list">
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="#">
+              <span class="visually-hidden">Вконтакте</span>
+              <svg></svg>
+            </a>
+          </li>
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="#">
+              <span class="visually-hidden">Twitter</span>
+              <svg></svg>
+            </a>
+          </li>
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="#">
+              <span class="visually-hidden">Facebook</span>
+              <svg></svg>
+            </a>
+          </li>
+          <li class="main-footer__item">
+            <a class="main-footer__link" href="#">
+              <span class="visually-hidden">Youtube</span>
+              <svg></svg>
+            </a>
+          </li>
+        </ul>
+        <a class="main-footer__link main-footer__link--add" href="#">Подробнее о проекте</a>
+        <img src="" width="" height="" alt="Panteon project">
+      </div>
+    </footer>
     <div style="display: none;">
       <include src="build/img/svg-sprite.svg"></include>
     </div>
     <script src="js/menu.js"></script>
   </body>
 </html>
-
-<header>
-<ds>
-
-</ds>
-</header>
