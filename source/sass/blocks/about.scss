@@ -1,0 +1,25 @@
+.about {
+  background-image: url("../img/svg/rocket-background-mobile.svg");
+  background-position: 0 -1000px;
+  background-repeat: no-repeat;
+  background-size: 320px 1292px;
+}
+
+.about__title {
+  font-size: $body-font-size + 20px;
+  line-height: $body-line-height + 22px;
+  font-weight: $font-bold;
+  color: $text-pink;
+}
+
+.about__subtitle {
+  font-size: $body-font-size + 8px;
+  line-height: $body-line-height + 12px;
+  font-weight: $font-bold;
+}
+
+.about__discription {
+  font-size: $body-font-size - 2px;
+  line-height: $body-line-height;
+  color: $text-discription;
+}

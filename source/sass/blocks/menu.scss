@@ -1,0 +1,10 @@
+.menu-list {
+  @include list;
+}
+
+.menu__link {
+  @include link;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  font-weight: $font-regular;
+}

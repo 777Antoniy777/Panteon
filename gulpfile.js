@@ -55,7 +55,7 @@ gulp.task("webp", function() {
 });
 
 gulp.task("svgsprite", function() {
-  return gulp.src("build/img/svg/sprite-*.svg")
+  return gulp.src("build/img/svg/sprite/*.svg")
     .pipe(svgsprite({
       inlineSvg: true
     }))
@@ -93,7 +93,8 @@ gulp.task("reload", function(done) {
 gulp.task("copy", function() {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
-    "source/js/**"
+    "source/js/**",
+    "source/video/*"
   ], {
     base: "source"
   })

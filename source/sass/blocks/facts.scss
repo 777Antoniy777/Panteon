@@ -1,0 +1,16 @@
+.facts__list {
+  @include list;
+}
+
+.facts__title {
+  font-size: $body-font-size + 20px;
+  line-height: $body-line-height + 28px;
+  font-weight: $font-bold;
+  color: $text-pink;
+}
+
+.facts__discription {
+  font-size: $body-font-size - 3px;
+  line-height: $body-line-height - 6px;
+  color: $text-discription;
+}
