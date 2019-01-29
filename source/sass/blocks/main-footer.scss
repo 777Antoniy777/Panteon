@@ -1,0 +1,23 @@
+.main-footer {
+  background-color: $text-pink;
+  background-image: url("../../img/filter-background-mobile.png");
+  background-position: 0 -7111px;
+  background-repeat: repeat;
+  background-size: 344px 7321px;
+}
+
+.main-footer__list {
+  @include list;
+}
+
+.main-footer__link {
+  &--add {
+    @include link;
+    font-size: $body-font-size - 2px;
+    line-height: $body-line-height;
+    font-weight: $font-regular;
+    color: $text-white;
+    padding-bottom: 2px;
+    border-bottom: 1px solid $text-white;
+  }
+}

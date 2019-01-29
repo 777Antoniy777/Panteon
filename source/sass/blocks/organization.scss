@@ -1,0 +1,50 @@
+.organization__title {
+  font-size: $body-font-size + 20px;
+  line-height: $body-line-height + 22px;
+  font-weight: $font-bold;
+  color: $text-pink;
+}
+
+.organization__list {
+  @include list;
+}
+
+.organization__item input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.organization__item label {
+  font-size: $body-font-size + 4px;
+  line-height: $body-line-height;
+  font-weight: $font-bold;
+  color: $text-pink;
+}
+
+.organization__subtitle {
+  font-size: $body-font-size + 8px;
+  line-height: $body-line-height + 6px;
+  font-weight: $font-bold;
+  color: $text-black;
+}
+
+.organization__discription {
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  color: $text-discription;
+}
+
+.organization__link {
+  @include link;
+  display: inline-block;
+  vertical-align: top;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  font-weight: $font-bold;
+  width: 160px;
+  height: 46px;
+  border-radius: 23px;
+  background-color: $text-pink;
+  color: $text-white;
+}

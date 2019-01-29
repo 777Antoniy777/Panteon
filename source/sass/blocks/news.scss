@@ -1,0 +1,36 @@
+.news {
+  color: $text-white;
+  background-color: $text-pink;
+  background-image: url("../img/news-background-mobile.jpg");
+  background-position: 0 0;
+  background-repeat: repeat-y;
+  background-size: 100% 1309px;
+}
+
+.news__title {
+  font-size: $body-font-size + 20px;
+  line-height: $body-line-height + 22px;
+  font-weight: $font-bold;
+}
+
+.news__list {
+  @include list;
+}
+
+.news__item input {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.news__subtitle {
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  font-weight: $font-regular;
+  color: #908bb1;
+}
+
+.news__discription {
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+}

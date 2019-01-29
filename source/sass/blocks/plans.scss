@@ -1,0 +1,19 @@
+.plans__title {
+  font-size: $body-font-size + 20px;
+  line-height: $body-line-height + 22px;
+  font-weight: $font-bold;
+}
+
+.plans__discription {
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+}
+
+.plans__link {
+  @include link;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  font-weight: $font-regular;
+  padding-bottom: 1px;
+  border-bottom: 1px solid $text-white;
+}

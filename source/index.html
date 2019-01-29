@@ -23,7 +23,7 @@
       <div class="main-header__nav-wrapper">
         <nav class="main-header__nav">
           <a class="main-header__logo-link">
-            <img class="main-header__logo" src="img/svg/Логотип.png" width="145" height="42" alt="Panteon project">
+            <img class="main-header__logo" src="img/svg/logo-header.svg" width="145" height="42" alt="Panteon project">
           </a>
           <button class="main-header__menu-button" type="button"><span class="visually-hidden">Меню сайта</span></button>
           <div class="main-header__menu menu">
@@ -39,7 +39,7 @@
       <div class="main-header__wrapper">
         <h1 class="main-header__title">Пункт назначения: <span class="main-header__title main-header__title--panteon">Пантеон,</span> <span class="main-header__title main-header__title--mars">марс</span></h1>
         <video class="main-header__video" width="215" height="140" poster="img/prewiev-video-mobile.jpg">
-          <source src="video/video.mp4" type="video/mp4;">
+          <source src="video/video.mp4" type="video/mp4">
         </video>
         <a class="main-header__link" href="#">Первый город на планете Марс недалеко от горы Олимп</a>
         <button class="main-header__button" type="button"><span class="visually-hidden">Нажмите, чтобы развернуть</span></button>
@@ -93,7 +93,9 @@
         <h3 class="elon-musk__subtitle">Илон Маск. Гений или безумец?</h3>
         <p class="elon-musk__discription">Канадско-американский инженер, предприниматель, изобретатель и инвестор; миллиардер. Основатель компаний SpaceX и X.com, позже переименованной в PayPal. Планирует потратить большую часть накоплений на реализацию своей мечты, а также мечты многих тысяч романтиков, писателей, учёных: создать внеземную цивилизацию.</p>
         <div class="elon-musk__image-wrapper">
-          <img class="elon-musk__image" src="" width="" height="" alt="Илон Маск">
+          <div>
+            <img class="elon-musk__image" src="img/elon-musk-mobile.jpg" width="165" height="189" alt="Илон Маск">
+          </div>
           <p class="elon-musk__discription elon-musk__discription--citation">Мы должны сделать эту мечту реальностью за наше время жизни. Любой человек, который пожелает отправиться на Марс, должен иметь такую возможность</p>
         </div>
         <p class="elon-musk__discription"> — заявил Маск на Международной астронавтической конференции в Гвадалахаре (Мексика). Он обосновал необходимость своего проекта вопросом выживания человечества, которое для своего сохранения должно стать «космическим видом».</p>
@@ -101,14 +103,16 @@
       </section>
       <section class="cost">
         <h2 class="cost__title">Стоимость перелёта</h2>
-        <img class="cost__image" src="" width="" height="" alt="Ракета, взмывающая ввысь!">
+        <img class="cost__image" src="img/rocket-mobile.jpg" width="289" height="289" alt="Ракета, взмывающая ввысь!">
         <p class="cost__discription">Высадка двоих астронавтов на Луну обошлась США в 20 млрд. долларов. Маск стремится сократить эту цифру в 20 000 раз, что составит <span>500 000 долларов</span> на человека.</p>
         <p class="cost__discription cost__discription--price"><span>$500 k</span>и ты на Марсе!</p>
         <a class="cost__link" href="#">Я готов лететь</a>
       </section>
       <section class="news">
-        <h2 class="news__title">Подводные  камни  в масштабах  космоса</h2>
-        <video class="news__video"></video>
+        <h2 class="news__title">Подводные камни в масштабах  космоса</h2>
+        <video class="news__video" width="291" height="172" poster="img/astronauts-background-mobile.jpg">
+          <source src="video/video.mp4" type="video/mp4">
+        </video>
         <ul class="news__list">
           <li class="news__item">
             <input type="radio" name="new" id="new-first">
@@ -145,40 +149,65 @@
         <ul class="organization__list">
           <li class="organization__item">
             <input type="radio" name="organization" id="organization-first">
-            <label for="organization-first">Проживание</label>
-            <img src="" width="" height="" alt="Ваша будущая комната">
+            <label for="organization-first">
+              <svg width="30" height="23">
+                <use xlink:href="#icon-teacup"/>
+              </svg>
+              Проживание
+            </label>
+            <img src="img/organization-live-mobile.jpg" width="262" height="125" alt="Ваша будущая комната">
             <h3 class="organization__subtitle">Проживание</h3>
             <p class="organization__discription">В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для выращивания зелени — 50 м2 на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.</p>
             <a class="organization__link" href="#">Подробнее</a>
           </li>
           <li class="organization__item">
             <input type="radio" name="organization" id="organization-second">
-            <label for="organization-second">Проживание</label>
-            <img src="" width="" height="" alt="Ваша будущая комната">
+            <label for="organization-second">
+              <svg width="26" height="19">
+                <use xlink:href="#icon-helmet"/>
+              </svg>
+              Проживание
+            </label>
+            <img src="img/organization-live-mobile.jpg" width="262" height="125" alt="Ваша будущая комната">
             <h3 class="organization__subtitle">Проживание</h3>
             <p class="organization__discription">В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для выращивания зелени — 50 м2 на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.</p>
             <a class="organization__link" href="#">Подробнее</a>
           </li>
           <li class="organization__item">
             <input type="radio" name="organization" id="organization-third">
-            <label for="organization-third">Проживание</label>
-            <img src="" width="" height="" alt="Ваша будущая комната">
+            <label for="organization-third">
+              <svg width="22" height="31">
+                <use xlink:href="#icon-microscope"/>
+              </svg>
+              Проживание
+            </label>
+            <img src="img/organization-live-mobile.jpg" width="262" height="125" alt="Ваша будущая комната">
             <h3 class="organization__subtitle">Проживание</h3>
             <p class="organization__discription">В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для выращивания зелени — 50 м2 на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.</p>
             <a class="organization__link" href="#">Подробнее</a>
           </li>
           <li class="organization__item">
             <input type="radio" name="organization" id="organization-forth">
-            <label for="organization-forth">Проживание</label>
-            <img src="" width="" height="" alt="Ваша будущая комната">
+            <label for="organization-forth">
+              <svg width="25" height="21">
+                <use xlink:href="#icon-photo"/>
+              </svg>
+              Проживание
+            </label>
+            <img src="img/organization-live-mobile.jpg" width="262" height="125" alt="Ваша будущая комната">
             <h3 class="organization__subtitle">Проживание</h3>
             <p class="organization__discription">В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для выращивания зелени — 50 м2 на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.</p>
             <a class="organization__link" href="#">Подробнее</a>
           </li>
           <li class="organization__item">
             <input type="radio" name="organization" id="organization-fifth">
-            <label for="organization-fifth">Проживание</label>
-            <img src="" width="" height="" alt="Ваша будущая комната">
+            <label for="organization-fifth">
+              <svg width="26" height="27">
+                <use xlink:href="#icon-leaves"/>
+              </svg>
+              Проживание
+            </label>
+            <img src="img/organization-live-mobile.jpg" width="262" height="125" alt="Ваша будущая комната">
             <h3 class="organization__subtitle">Проживание</h3>
             <p class="organization__discription">В основе жилых помещений лежат надувные компоненты — спальня, рабочая зона, гостиная, парник для выращивания зелени — 50 м2 на человека. Благодаря этим компонентам, колонисты смогут принять душ, приготовить свежую пищу, носить обычную одежду. Весь комплекс соединен сетью ходов.</p>
             <a class="organization__link" href="#">Подробнее</a>
@@ -193,15 +222,15 @@
         <p class="plans__discription">За 40-100 ближайших лет на Марс планируется доставить до 1 млн.</p>
         <a class="plans__link" href="#">Критерии отбора</a>
       </section>
-      <section class="feedback form">
+      <section class="feedback-form">
         <h2 class="visually-hidden">Форма для подписки на новости</h2>
-        <form class="form__wrapper" action="https://echo.htmlacademy.ru" method="POST" name="feedback">
-          <p class="form__discription">Будь в курсе новостей</p>
+        <form class="feedback-form__wrapper" action="https://echo.htmlacademy.ru" method="POST" name="feedback">
+          <p class="feedback-form__discription">Будь в курсе новостей</p>
           <label for="name" class="visually-hidden">Ваше имя</label>
           <input type="text" name="name" id="name" placeholder="Имя">
           <label for="email" class="visually-hidden">Ваше имя</label>
           <input type="email" name="email" id="email" placeholder="E-mail">
-          <button class="form__button" type="submit">Подписаться</button>
+          <button class="feedback-form__button" type="submit">Подписаться</button>
         </form>
       </section>
       </div>
@@ -212,31 +241,39 @@
           <li class="main-footer__item">
             <a class="main-footer__link" href="#">
               <span class="visually-hidden">Вконтакте</span>
-              <svg></svg>
+              <svg width="35" height="35">
+                <use xlink:href="#icon-vk"/>
+              </svg>
             </a>
           </li>
           <li class="main-footer__item">
             <a class="main-footer__link" href="#">
               <span class="visually-hidden">Twitter</span>
-              <svg></svg>
+              <svg width="35" height="35">
+                <use xlink:href="#icon-twitter"/>
+              </svg>
             </a>
           </li>
           <li class="main-footer__item">
             <a class="main-footer__link" href="#">
               <span class="visually-hidden">Facebook</span>
-              <svg></svg>
+              <svg width="35" height="35">
+                <use xlink:href="#icon-facebook"/>
+              </svg>
             </a>
           </li>
           <li class="main-footer__item">
             <a class="main-footer__link" href="#">
               <span class="visually-hidden">Youtube</span>
-              <svg></svg>
+              <svg width="35" height="35">
+                <use xlink:href="#icon-youtube"/>
+              </svg>
             </a>
           </li>
         </ul>
         <a class="main-footer__link main-footer__link--add" href="#">Подробнее о проекте</a>
         <a class="main-footer__logo-link">
-          <img class="main-footer__logo" src="" width="" height="" alt="Panteon project">
+          <img class="main-footer__logo" src="img/svg/logo-footer.svg" width="114" height="32" alt="Panteon project">
         </a>
       </div>
     </footer>

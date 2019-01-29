@@ -15,4 +15,26 @@
   font-size: $body-font-size;
   line-height: $body-line-height;
   color: $text-discription;
+
+  &--citation {
+    font-size: $body-font-size + 2px;
+    line-height: $body-line-height;
+    color: $text-pink;
+  }
+}
+
+.elon-musk__image-wrapper div {
+  position: relative;
+  width: 165px;
+  height: 189px;
+
+  &::before {
+    @include pseudo;
+    top: 0;
+    right: 0;
+    width: 165px;
+    height: 189px;
+    background-color: transparent;
+    border: 10px solid $text-pink;
+  }
 }
