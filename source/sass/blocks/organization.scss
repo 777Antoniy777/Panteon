@@ -5,10 +5,6 @@
   color: $text-pink;
 }
 
-.organization__list {
-  @include list;
-}
-
 .organization__item input {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -29,10 +25,10 @@
   color: $text-black;
 }
 
-.organization__discription {
+.organization__description {
   font-size: $body-font-size;
   line-height: $body-line-height;
-  color: $text-discription;
+  color: $text-description;
 }
 
 .organization__link {

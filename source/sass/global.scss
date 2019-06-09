@@ -52,11 +52,6 @@
   font-display: swap;
 }
 
-html {
-  margin: 0;
-  padding: 0;
-}
-
 body {
   font-family: $font;
   font-weight: $font-light;
@@ -77,7 +72,7 @@ body {
 }
 
 .site-wrapper {
-  width: $mobile-width;
+  width: 290px;
   margin: 0 auto;
   padding: 0;
 }
@@ -88,7 +83,7 @@ body {
   }
 
   .site-wrapper {
-    width: $tablet-width;
+    width: 720px;
   }
 }
 
@@ -98,6 +93,6 @@ body {
   }
 
   .site-wrapper {
-    width: $desktop-width;
+    width: 1140px;
   }
 }

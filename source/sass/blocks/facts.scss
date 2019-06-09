@@ -2,10 +2,6 @@
   background-color: #fff5f8;
 }
 
-.facts__list {
-  @include list;
-}
-
 .facts__title {
   font-size: $body-font-size + 20px;
   line-height: $body-line-height + 28px;
@@ -13,8 +9,8 @@
   color: $text-pink;
 }
 
-.facts__discription {
+.facts__description {
   font-size: $body-font-size - 3px;
   line-height: $body-line-height - 6px;
-  color: $text-discription;
+  color: $text-description;
 }

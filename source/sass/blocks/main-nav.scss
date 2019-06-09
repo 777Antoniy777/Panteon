@@ -1,0 +1,41 @@
+.main-nav {
+  min-height: 78px;
+  margin-bottom: 63px;
+  box-shadow: 0 1px #ffffff;
+}
+
+.main-nav__wrapper {
+  min-height: inherit;
+}
+
+.main-nav__wrapper .site-wrapper {
+  @include flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: inherit;
+}
+
+.main-nav__button {
+  width: 47px;
+  height: 18px;
+  background-color: transparent;
+  border: 1px solid blue;
+}
+
+.main-nav__item {
+  @include flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 40px;
+  background-color: #8c165d;
+  text-align: center;
+  box-shadow: 0 -1px #ffffff;
+}
+
+.main-nav__link {
+  @include link;
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  font-weight: $font-regular;
+  text-transform: uppercase;
+}

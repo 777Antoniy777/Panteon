@@ -13,10 +13,6 @@
   font-weight: $font-bold;
 }
 
-.news__list {
-  @include list;
-}
-
 .news__item input {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -30,7 +26,7 @@
   color: #908bb1;
 }
 
-.news__discription {
+.news__description {
   font-size: $body-font-size;
   line-height: $body-line-height;
 }
