@@ -24,7 +24,7 @@
     <header class="main-header">
 
         <div class="main-header__nav-wrapper">
-          <nav class="main-header__nav main-nav">
+          <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
 
             <div class="main-nav__wrapper">
               <div class="site-wrapper">
@@ -45,13 +45,13 @@
           </nav>
         </div>
 
-        <div class="site-wrapper">
-          <div class="main-header__wrapper">
+        <div class="main-header__wrapper">
+          <div class="site-wrapper">
             <h1 class="main-header__title">Пункт назначения: <span class="main-header__title main-header__title--panteon">Пантеон,</span><span class="main-header__title main-header__title--mars">марс</span></h1>
             <video class="main-header__video" width="215" height="140" poster="img/prewiev-video-mobile.jpg">
               <source src="video/video.mp4" type="video/mp4">
             </video>
-            <p class="main-header__description">Первый город на планете Марс недалеко от горы Олимп</p>
+            <p class="main-header__description">Первый город<br> на планете Марс недалеко от горы Олимп</p>
             <a class="main-header__link" href="#"><span class="visually-hidden">Нажмите, чтобы прокрутить</span></a>
           </div>
         </div>
@@ -64,49 +64,49 @@
       <section class="facts">
         <div class="site-wrapper">
           <h2 class="visually-hidden">Факты о Марсе</h2>
-          <div class="container">
-            <ul class="facts__list">
-              <li class="facts__item">
-                <span class="facts__title">4</span>
-                <p class="facts__description">четвёртая планета по удалённости от Солнца</p>
-              </li>
-              <li class="facts__item">
-                <span class="facts__title">7</span>
-                <p class="facts__description">седьмая по размерам планета Солнечной системы</p>
-              </li>
-              <li class="facts__item">
-                <span class="facts__title">10,7%</span>
-                <p class="facts__description">массы Земли (ваш вес будет в 3 раза меньше, чем на Земле)</p>
-              </li>
-              <li class="facts__item">
-                <span class="facts__title">2</span>
-                <p class="facts__description">спутника вместо Луны (как картошка, только больше)</p>
-              </li>
-              <li class="facts__item">
-                <span class="facts__title">21 км</span>
-                <p class="facts__description">высота самой высокой горы Марса.</p>
-              </li>
-              <li class="facts__item">
-                <span class="facts__title">+20</span>
-                <p class="facts__description">максимальная температура на поверхности</p>
-              </li>
-            </ul>
-          </div>
+          <ul class="facts__list">
+            <li class="facts__item facts__item--mobile">
+              <span class="facts__title">4</span>
+              <p class="facts__description">четвёртая планета по удалённости<br> от Солнца</p>
+            </li>
+            <li class="facts__item facts__item--mobile">
+              <span class="facts__title">7</span>
+              <p class="facts__description">седьмая по размерам планета Солнечной системы</p>
+            </li>
+            <li class="facts__item">
+              <span class="facts__title">10,7%</span>
+              <p class="facts__description">массы Земли (ваш вес будет в 3 раза меньше, чем на Земле)</p>
+            </li>
+            <li class="facts__item">
+              <span class="facts__title">2</span>
+              <p class="facts__description">спутника вместо Луны (как картошка, только больше)</p>
+            </li>
+            <li class="facts__item">
+              <span class="facts__title">21 км</span>
+              <p class="facts__description">высота самой высокой горы Марса.</p>
+            </li>
+            <li class="facts__item">
+              <span class="facts__title">+20</span>
+              <p class="facts__description">максимальная температура на поверхности</p>
+            </li>
+          </ul>
         </div>
       </section>
 
       <!--О Марсе-->
       <section class="about">
-        <h2 class="about__title">Марс. Вспомнить всё</h2>
-        <div class="about__wrapper">
-          <h3 class="about__subtitle">Что такое Марс?</h3>
-          <p class="about__description">Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.</p>
-          <p class="about__description">Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв.</p>
-        </div>
-        <div class="about__wrapper">
-          <h3 class="about__subtitle">Где это? Как туда доехать?</h3>
-          <p class="about__description">Расстояние до Марса — почти 56 миллионов километров.</p>
-          <p class="about__description">Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8 месяцев.</p>
+        <div class="site-wrapper">
+          <h2 class="about__title">Марс. Вспомнить всё</h2>
+          <div class="about__wrapper">
+            <h3 class="about__subtitle">Что такое Марс?</h3>
+            <p class="about__description">Планета Солнечной системы, названа в честь Марса — древнеримского бога войны. Иногда Марс называют «красной планетой» из-за красного оттенка поверхности, придаваемого ей оксидом железа.</p>
+            <p class="about__description">Особенности планеты — наличие слабой отмосферы, состоящей в основном из улекислого газа, времена года, пылевые бури, сильная эррозия почв.</p>
+          </div>
+          <div class="about__wrapper">
+            <h3 class="about__subtitle">Где это? Как туда доехать?</h3>
+            <p class="about__description">Расстояние до Марса — почти 56 миллионов километров.</p>
+            <p class="about__description">Чтобы преодалеть такое расстояние, нужно лететь на межпланетоном корабле 7-8 месяцев.</p>
+          </div>
         </div>
       </section>
 
@@ -318,6 +318,6 @@
     <div style="display: none;">
       <include src="build/img/svg-sprite.svg"></include>
     </div>
-    <script src="js/menu.js"></script>
+    <script src="js/all.min.js"></script>
   </body>
 </html>

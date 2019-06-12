@@ -1,13 +1,16 @@
 .main-header {
-  background-color: $text-pink;
-  background-image: url("../img/background-header-mobile.jpg");
-  background-position: 0 0;
-  background-repeat: repeat-y;
-  background-size: 100% 579px;
   color: $text-white;
 }
 
 .main-header__wrapper {
+  @include background(0 0, repeat-y);
+  background-image: url("../img/background-header-mobile.jpg");
+  background-color: $text-pink;
+  background-size: 100% 579px;
+  min-height: 501px;
+}
+
+.main-header__wrapper .site-wrapper {
   @include flex(flex, column);
   align-items: center;
 }
@@ -18,7 +21,7 @@
   flex-wrap: wrap;
   width: 214px;
   font-size: $body-font-size - 3px;
-  line-height: $body-line-height - 1px;
+  line-height: $body-line-height - 4px;
   font-weight: $font-thin;
   text-transform: uppercase;
   letter-spacing: 0.25px;
@@ -32,6 +35,7 @@
     font-size: $body-font-size + 54px;
     line-height: $body-line-height + 56px;
     font-weight: $font-black;
+    margin-bottom: 23px;
   }
 }
 
@@ -40,18 +44,22 @@
 }
 
 .main-header__description {
+  position: relative;
+  top: -24px;
   display: block;
   font-size: $body-font-size - 2px;
+  line-height: $body-line-height - 7px;
   width: 122px;
-  margin-left: auto;
-  margin-right: 38px;
+  margin: 13px 38px 0 auto;
   color: #ffcfdf;
   text-align: left;
+  z-index: 1;
 }
 
 .main-header__link {
   width: 59px;
   height: 59px;
+  margin-bottom: 28px;
   border: none;
   border-radius: 50%;
   background-color: rgb(225, 36, 87);
