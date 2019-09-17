@@ -1,0 +1,17 @@
+@mixin font-face($font-name, $file-name, $weight: 400, $style: normal) {
+  @font-face {
+    font-family: $font-name;
+    src: url($file-name + ".woff2") format("woff2"),
+      url($file-name + ".woff") format("woff");
+    font-weight: $weight;
+    font-style: $style;
+    font-display: swap;
+  }
+}
+
+@include font-face("Proxima Nova", "../../fonts/ProximaNovaT-Thin", 100);
+@include font-face("Proxima Nova", "../../fonts/ProximaNova-Light", 300);
+@include font-face("Proxima Nova", "../../fonts/ProximaNova-Regular");
+@include font-face("Proxima Nova", "../../fonts/ProximaNova-Semibold", 600);
+@include font-face("Proxima Nova", "../../fonts/ProximaNova-Bold", 700);
+@include font-face("Proxima Nova", "../../fonts/ProximaNova-Black", 900);

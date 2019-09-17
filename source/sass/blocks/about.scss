@@ -1,0 +1,46 @@
+.about {
+  padding-top: 5px;
+  padding-bottom: 212px;
+  background-image: url("../img/svg/rocket-background-mobile.svg");
+  background-position: 0 114%;
+  background-repeat: no-repeat;
+  background-size: 100% 1292px;
+}
+
+.about .site-wrapper {
+  width: 90.625%;
+}
+
+.about__title {
+  font-size: $body-font-size + 20px;
+  line-height: $body-line-height + 22px;
+  font-weight: $font-bold;
+  color: $text-pink;
+  margin-bottom: 0;
+}
+
+.about__wrapper {
+  padding: 19px 0 9px 2px;
+
+  &:nth-of-type(2) {
+    padding-right: 11px;
+  }
+}
+
+.about__wrapper:nth-of-type(2) .about__description:last-child {
+  margin-top: 23px;
+}
+
+.about__subtitle {
+  font-size: $body-font-size + 8px;
+  line-height: $body-line-height;
+  font-weight: $font-bold;
+  padding-bottom: 8px;
+  margin: 0;
+}
+
+.about__description {
+  font-size: $body-font-size - 2px;
+  line-height: $body-line-height;
+  color: $text-description;
+}

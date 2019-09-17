@@ -1,0 +1,48 @@
+.feedback-form {
+  background-color: $text-pink;
+  background-image: url("../img/background-modules-mobile.jpg");
+  background-position: 0 0;
+  background-repeat: repeat;
+  background-size: 344px 397px;
+  color: #42295f;
+}
+
+.feedback-form__description {
+  font-size: $body-font-size + 7px;
+  line-height: $body-line-height + 8px;
+  font-weight: $font-bold;
+}
+
+.feedback-form__wrapper input[type="text"]::placeholder,
+.feedback-form__wrapper input[type="email"]::placeholder {
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  font-weight: $font-light;
+  color: $text-white;
+}
+
+.feedback-form__wrapper input[type="text"],
+.feedback-form__wrapper input[type="email"] {
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  border: none;
+  border-bottom: 1px solid $text-white;
+  background-color: transparent;
+}
+
+.feedback-form__button {
+  @include link;
+  display: inline-block;
+  vertical-align: top;
+  font-size: $body-font-size + 2px;
+  line-height: $body-line-height;
+  font-weight: $font-bold;
+  width: 255px;
+  height: 57px;
+  border-radius: 28px;
+  background-color: $text-white;
+  color: $text-pink;
+  box-shadow: 
+    -14px 0 35px 3px rgba($text-white, 0.48),
+    14px 0 35px 3px rgba($text-white, 0.48);
+}

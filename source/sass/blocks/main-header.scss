@@ -1,0 +1,11 @@
+.main-header {
+  color: $white;
+  // margin-bottom: -78px;
+  background-color: transparent;
+}
+
+.main-header__wrapper .site-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

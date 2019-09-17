@@ -1,0 +1,40 @@
+.elon-musk__title {
+  font-size: $body-font-size + 20px;
+  line-height: $body-line-height + 22px;
+  font-weight: $font-bold;
+  color: $text-pink;
+}
+
+.elon-musk__subtitle {
+  font-size: $body-font-size + 8px;
+  line-height: $body-line-height + 12px;
+  font-weight: $font-bold;
+}
+
+.elon-musk__description {
+  font-size: $body-font-size;
+  line-height: $body-line-height;
+  color: $text-description;
+
+  &--citation {
+    font-size: $body-font-size + 2px;
+    line-height: $body-line-height;
+    color: $text-pink;
+  }
+}
+
+.elon-musk__image-wrapper div {
+  position: relative;
+  width: 165px;
+  height: 189px;
+
+  &::before {
+    @include pseudo;
+    top: 0;
+    right: 0;
+    width: 165px;
+    height: 189px;
+    background-color: transparent;
+    border: 10px solid $text-pink;
+  }
+}
