@@ -1,0 +1,68 @@
+.introduction {
+  min-height: 580px;
+  padding-top: 141px;
+  color: $white;
+  background-image: url("../img/background-header-mobile.jpg");
+  background-size: 100% 579px;
+  background-repeat: repeat-y;
+  background-position: 0 0;
+  background-color: $introduction-bg;
+}
+
+.introduction .site-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.introduction__title {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 214px;
+  font-size: 13px;
+  line-height: 16px;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0.25px;
+
+  &--panteon {
+    width: 70px;
+    font-weight: 400;
+  }
+
+  &--mars {
+    margin-bottom: 23px;
+    font-size: 70px;
+    line-height: 72px;
+    font-weight: 900;
+  }
+}
+
+.introduction__video {
+  box-shadow: 0 25px 38px 0 rgba(0, 0, 0, 0.48);
+}
+
+.introduction__description {
+  position: relative;
+  top: -24px;
+  z-index: 1;
+  display: block;
+  font-size: 14px;
+  line-height: 16px;
+  width: 122px;
+  margin: 13px 38px 0 auto;
+  text-align: left;
+  color: #ffcfdf;
+}
+
+.introduction__link {
+  display: block;
+  width: 59px;
+  height: 59px;
+  margin-bottom: 28px;
+  background-color: rgb(225, 36, 87);
+  border: none;
+  border-radius: 50%;
+  opacity: 0.502;
+}

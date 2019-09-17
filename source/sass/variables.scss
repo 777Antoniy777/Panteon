@@ -1,25 +1,21 @@
 // font-family
-$font: "Proxima Nova", "Arial", sans-serif;
-// font-weight
-$font-thin: 100;
-$font-light: 300;
-$font-regular: 400;
-$font-semibold: 600;
-$font-bold: 700;
-$font-black: 900;
-// font-size && line-height
-$body-font-size: 16px;
-$body-line-height: 24px;
+$proxima: "Proxima Nova", "Arial", sans-serif;
+
 // color
-$text-white: #ffffff;
-$text-black: #000000;
-$text-pink: #e12457;
-$text-description: #4c4c4c;
+$introduction-bg: #e12457;
+$text-description-color: #4c4c4c;
 $menu-color: #8c165d;
+
+$white: #ffffff;
+$black: #000000;
+
 // @media
-$mobile-width: 320px;
-$tablet-width: 750px;
-$desktop-width: 1170px;
+$media-md: 1440px;
+$media-dt: 1024px;
+$media-tb: 768px;
+$media-s: 360px;
+$media-m: 320px;
+
 // background-retina
 $retina-dpi: 144dpi;
 $retina-dppx: 1.5dppx;

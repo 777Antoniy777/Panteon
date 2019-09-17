@@ -93,7 +93,7 @@ gulp.task("server", function () {
   });
 
   gulp.watch("source/sass/**/*.{scss,sass}", gulp.series("css"));
-  gulp.watch("source/img/svg/sprite-*.svg", gulp.series("svgsprite", "html", "reload"));
+  gulp.watch("source/img/svg/sprite/*.svg", gulp.series("svgsprite", "html", "reload"));
   gulp.watch("source/*.html", gulp.series("html", "reload"));
   gulp.watch("source/js/*.js", gulp.series("js"));
 });

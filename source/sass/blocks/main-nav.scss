@@ -4,12 +4,8 @@
   box-shadow: 0 1px #ffffff;
 }
 
-.main-nav__wrapper {
-  min-height: inherit;
-}
-
-.main-nav__wrapper .site-wrapper {
-  @include flex;
+.main-nav .site-wrapper {
+  display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: inherit;
@@ -27,36 +23,34 @@
 }
 
 .main-nav__item {
-  @include flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 40px;
-  background-color: $menu-color;
   text-align: center;
+  background-color: $menu-color;
   box-shadow: 0 -1px #ffffff;
 }
 
 .main-nav__link {
-  @include link;
-  font-size: $body-font-size;
-  line-height: $body-line-height;
-  font-weight: $font-regular;
+  // font-size: $body-font-size;
+  // line-height: $body-line-height;
   text-transform: uppercase;
 }
 
 //  стили для js гл.меню
 .main-nav--closed {
   position: relative;
+  z-index: 1;
   margin-bottom: 0;
   box-shadow: none;
-  z-index: 1;
 }
 
 .main-nav--opened,
 .main-nav--nojs {
   position: relative;
-  margin-bottom: 0;
   z-index: 1;
+  margin-bottom: 0;
 }
 
 .main-nav--nojs {
@@ -75,7 +69,7 @@
   display: none;
 }
 
-.main-nav--closed .main-nav__wrapper {
+.main-nav--closed .site-wrapper {
   margin-bottom: -78px;
 }
 

@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta name="format-detection" content="telephone=no">
     <link href="css/style.min.css" rel="stylesheet">
-    <link href="/fonts/ProximaNovaT-Thin.woff2" as="font" rel="preload">
-    <link href="/fonts/ProximaNova-Light.woff2" as="font" rel="preload">
-    <link href="/fonts/ProximaNova-Regular.woff2" as="font" rel="preload">
-    <link href="/fonts/ProximaNova-Semibold.woff2" as="font" rel="preload">
-    <link href="/fonts/ProximaNova-Bold.woff2" as="font" rel="preload">
-    <link href="/fonts/ProximaNova-Black.woff2" as="font" rel="preload">
+    <link href="fonts/ProximaNovaT-Thin.woff2" as="font" rel="preload" crossorigin="anonymous">
+    <link href="fonts/ProximaNova-Light.woff2" as="font" rel="preload" crossorigin="anonymous">
+    <link href="fonts/ProximaNova-Regular.woff2" as="font" rel="preload" crossorigin="anonymous">
+    <link href="fonts/ProximaNova-Semibold.woff2" as="font" rel="preload" crossorigin="anonymous">
+    <link href="fonts/ProximaNova-Bold.woff2" as="font" rel="preload" crossorigin="anonymous">
+    <link href="fonts/ProximaNova-Black.woff2" as="font" rel="preload" crossorigin="anonymous">
     <script>
       // Picture element HTML5 shiv
       document.createElement("picture");
@@ -20,47 +20,68 @@
   </head>
   <body>
 
-    <!--Хедер-->
-    <header class="main-header">
+    <!-- Хедер -->
+    <header class="main-header text-content">
 
         <div class="main-header__nav-wrapper">
           <nav class="main-header__nav main-nav main-nav--closed main-nav--nojs">
 
-            <div class="main-nav__wrapper">
-              <div class="site-wrapper">
-              <a class="main-nav__logo-link">
-                <img class="main-nav__logo-header" src="img/svg/logo-header.svg" width="145" height="42" alt="Panteon project">
-              </a>
-              <button class="main-nav__button" type="button"><span class="visually-hidden">Меню сайта</span></button>
-              </div>
-            </div>
+            <div class="site-wrapper">
 
+              <a class="main-nav__logo-link">
+                <img class="main-nav__logo-header" src="img/svg/logo-header.svg" width="145" height="42" alt="Panteon project logo">
+              </a>
+              
+              <button class="main-nav__button" type="button"><span class="visually-hidden">Меню сайта</span></button>
+            
+            </div>
+            
             <ul class="main-nav__list">
-              <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Главная страница</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Оплата</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">Риски</a></li>
-              <li class="main-nav__item"><a class="main-nav__link" href="#">О компании</a></li>
+              <li class="main-nav__item">
+                <a class="main-nav__link main-nav__link--active">Главная страница</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Оплата</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">Риски</a>
+              </li>
+              <li class="main-nav__item">
+                <a class="main-nav__link" href="#">О компании</a>
+              </li>
             </ul>
 
           </nav>
         </div>
 
-        <div class="main-header__wrapper">
-          <div class="site-wrapper">
-            <h1 class="main-header__title">Пункт назначения: <span class="main-header__title main-header__title--panteon">Пантеон,</span><span class="main-header__title main-header__title--mars">марс</span></h1>
-            <video class="main-header__video" width="215" height="140" poster="img/prewiev-video-mobile.jpg">
-              <source src="video/video.mp4" type="video/mp4">
-            </video>
-            <p class="main-header__description">Первый город<br> на планете Марс недалеко от горы Олимп</p>
-            <a class="main-header__link" href="#"><span class="visually-hidden">Нажмите, чтобы прокрутить</span></a>
-          </div>
-        </div>
-
     </header>
-    <!--Осн.часть-->
+    
+    <!-- Осн.часть -->
     <main class="main">
 
-      <!--Факты-->
+      <!-- Вступление -->
+      <section class="introduction text-content">
+        <div class="site-wrapper">
+
+          <h1 class="introduction__title">Пункт назначения: 
+            <span class="introduction__title introduction__title--panteon">Пантеон,</span>
+            <span class="introduction__title introduction__title--mars">марс</span>
+          </h1>
+
+          <video class="introduction__video" width="215" height="140" poster="img/prewiev-video-mobile.jpg">
+            <source src="video/video.mp4" type="video/mp4">
+          </video>
+
+          <p class="introduction__description">Первый город<br> на планете Марс недалеко от горы Олимп</p>
+
+          <a class="introduction__link" href="#">
+            <span class="visually-hidden">Нажмите, чтобы прокрутить</span>
+          </a>
+
+        </div>
+      </section>
+
+      <!-- Факты -->
       <section class="facts">
         <div class="site-wrapper">
           <h2 class="visually-hidden">Факты о Марсе</h2>
